@@ -1,2 +1,6 @@
-# tp_final
-TP Final: Priorytask Task Manager
+# PrioryTask
+
+Simple task manager with priority levels developed in Python.
+
+## How to run
+python main.py
