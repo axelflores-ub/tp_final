@@ -86,4 +86,4 @@ Included in the repository:
 
 Developed by:
 
-- Axel Gutkowski
+- Axel Flores
