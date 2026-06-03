@@ -1,5 +1,7 @@
 # PrioryTask
 
+![Tests](https://img.shields.io/badge/tests-8%20passed-brightgreen)
+
 PrioryTask is a task manager application developed in Python using an object-oriented programming approach.
 
 The project was created as part of the Final QA Project and includes automated testing using pytest.
@@ -42,10 +44,12 @@ tp_final/
 │   └── test_task_manager.py
 │
 ├── uml_priorytask_tp_final.png
+├── use_case_diagram.png
 ├── README.md
 ├── TP Final Sprint 1 Documentación.pdf
 ├── TP Final Sprint 2 Documentación.pdf
-└── TP Final Sprint 3 Documentación.pdf
+├── TP Final Sprint 3 Documentación.pdf
+└── TP Final Sprint 4 Documentación.pdf
 ```
 
 ---
@@ -56,7 +60,18 @@ This UML diagram represents the structure and relationships between the classes 
 
 ![UML Diagram](./uml_priorytask_tp_final.png)
 
+
+
+
+## Use Case Diagram
+
+![Use Case Diagram](./use_case_diagram.png)
+
+
 ---
+
+
+
 
 ## How to Run the Application
 
@@ -105,6 +120,33 @@ pytest
 
 ---
 
+## End-to-End Testing (E2E)
+
+The project includes End-to-End tests designed to validate complete user workflows.
+
+### E2E Scenarios
+
+#### E2E-01 Complete Task Lifecycle
+
+1. Create a task
+2. View tasks
+3. Complete the task
+4. View tasks again
+5. Delete the task
+6. Verify it no longer appears
+
+#### E2E-02 Invalid Input Handling
+
+1. Attempt to create a task with an invalid priority
+2. Verify error message
+3. Confirm the application continues running
+
+### Result
+
+All E2E scenarios were executed successfully.
+
+---
+
 ## Architecture
 
 ### Task Class
@@ -147,6 +189,11 @@ Handles user interaction through the console interface.
 - Pytest integration
 - Execution of defined test cases
 
+### Sprint 4
+- End-to-End (E2E) testing
+- Execution of complete user workflows
+- Validation of system behavior from the user perspective
+
 ---
 
 ## Documentation
@@ -156,7 +203,9 @@ Included in the repository:
 - Sprint 1 Documentation
 - Sprint 2 Documentation
 - Sprint 3 Documentation
+- Sprint 4 Documentation
 - UML Diagram
+- UML Use Case Diagram
 
 ---
 
@@ -164,4 +213,4 @@ Included in the repository:
 
 Developed by:
 
-- Axel Gutkowski
+- Axel Flores
