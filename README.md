@@ -86,38 +86,52 @@ python main.py
 ```
 
 ---
-
 ## Automated Testing
 
-The project includes automated tests implemented with pytest.
+The project includes automated tests implemented with pytest to verify the correct behavior of the system.
 
-### Install pytest
+### Executed Tests
 
-```bash
-python -m pip install pytest
-```
-
-### Run tests
-
-```bash
-pytest
-```
-
-### Executed Test Cases
-
-- Task creation
-- Add task validation
+#### Component Testing
+- Add task correctly
 - Invalid priority validation
-- Complete task functionality
-- Delete task functionality
-- Multiple task operations
+- Complete task
+- Delete task
+
+#### Integration Testing
+- Create and display a task
+- Create and complete a task
+- Delete a task and verify it no longer appears
+
+#### Black Box Testing
+- Invalid priority ("Alta")
+- Valid priority ("High")
+
+#### Performance Testing
+- Creation of multiple tasks
+
+#### Path Testing
+- Add and display task
+- Add and complete task
+- Add and delete task
+
+### Automated Test Cases
+
+| Test | Purpose |
+|--------|---------|
+| test_create_task | Verify task creation |
+| test_add_task | Verify task addition |
+| test_task_content | Verify stored task data |
+| test_add_multiple_tasks | Verify multiple task creation |
+| test_invalid_priority_not_added | Verify invalid priority handling |
+| test_delete_task | Verify task deletion |
+| test_complete_task | Verify task completion |
+| test_multiple_operations | Verify system stability with multiple tasks |
 
 ### Test Result
 
 ```bash
 8 passed in 0.07s
-```
-
 ---
 
 ## End-to-End Testing (E2E)
