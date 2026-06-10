@@ -209,6 +209,46 @@ Handles user interaction through the console interface.
 - Execution of complete user workflows
 - Validation of system behavior from the user perspective
 
+## Sprint Final Evaluation – Live Testing Demonstration
+
+As part of the final project evaluation, a live testing demonstration was performed.
+
+A test case was intentionally modified to introduce an error in the application workflow. The automated test suite was then executed using pytest to verify that the testing framework correctly detected the failure.
+
+### Demonstrated Error
+
+The following modification was introduced:
+
+```python
+manager.add_task("Estudiar")
+```
+
+Instead of:
+
+```python
+manager.add_task("Estudiar", "High")
+```
+
+### Result
+
+Pytest detected the error successfully:
+
+```bash
+FAILED test_add_task
+TypeError: TaskManager.add_task() missing 1 required positional argument: 'priority'
+
+1 failed, 7 passed
+```
+
+### Validation
+
+After the demonstration, the test was corrected and the complete test suite was executed again.
+
+```bash
+8 passed in 0.07s
+```
+
+This demonstration confirms that the automated testing process is capable of detecting implementation errors and validating system correctness.
 ---
 
 ## Documentation

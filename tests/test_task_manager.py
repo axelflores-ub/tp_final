@@ -9,7 +9,7 @@ from task_manager import TaskManager
 def test_add_task():
     manager = TaskManager()
 
-    manager.add_task("Estudiar", "High")
+    manager.add_task("Estudiar")
 
     assert len(manager.tasks) == 1
     
