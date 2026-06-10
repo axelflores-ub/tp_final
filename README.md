@@ -131,7 +131,8 @@ The project includes automated tests implemented with pytest to verify the corre
 ### Test Result
 
 ```bash
-8 passed in 0.07s
+8 passed in 0.
+```
 ---
 
 ## End-to-End Testing (E2E)
